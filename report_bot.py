@@ -112,7 +112,7 @@ if prompt := st.chat_input("Enter report topic..."):
             full_response = ""
             try:
                 stream = client.chat.completions.create(
-                    model="gpt-4",
+                    model="gpt-3.5-turbo",
                     messages=messages,
                     stream=True
                 )
